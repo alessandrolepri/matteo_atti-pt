@@ -1,3 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+img.home {
+    position: absolute;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    height: 95vh;
+}
+
+div#nav {
+    margin-bottom: auto;
+}
+
+div.matteo {
+    position: absolute;
+    left: 8%;
+    top: 300px;
+}
+
 h1 {
-    color: red
+    max-width: 300px;
+    font-size: 65px;
+    font-weight: bolder;
+}
+
+h4 {
+    max-width: 390px;
+}
+
+h2 {
+    color: orangered;
+}
+
+#logo-navbar {
+    height: 52px;
+    width: 85px;
+}
+
+button {
+    background-color: orangered;
+    width: 70px;
+    height: 20px;
 }

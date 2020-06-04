@@ -11,6 +11,7 @@ img.home {
 
 div#nav {
     margin-bottom: auto;
+    position: relative;
 }
 
 div.matteo {
@@ -40,6 +41,17 @@ h2 {
 
 button {
     background-color: orangered;
-    width: 70px;
-    height: 20px;
+    width: 150px;
+    height: 45px;
+    color: white;
+    border: none;
+    margin-right: 50px;
+}
+
+.logo {
+    position: absolute;
+    height: 84px;
+    width: 151px;
+    bottom: 0px;
+    left: 0;
 }

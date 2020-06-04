@@ -9,7 +9,8 @@ import {
 import './module.scss'
 
 import NavBar from './components/NavBar';
-import { HomePage } from './components/HomePage';
+import HomePage from './components/HomePage';
+import AboutMe from './components/AboutMe';
 
 
 class App extends React.Component {
@@ -23,14 +24,13 @@ class App extends React.Component {
         <BrowserRouter>
         <main>
             <NavBar />
-            <HomePage />
 
-            { /*<Switch>
-            <Route path="/aboutme" component={Aboutme} />
-            <Route path="/contact" component={Info} />
-            <Route path="/service" component={Details} />
-            <Route path="/" component={Home} />
-            </Switch> */}
+            <Switch>
+            <Route path="/aboutme" component={AboutMe} />
+            { /* <Route path="/contact" component={Info} />
+        <Route path="/service" component={Details} /> */ }
+            <Route path="/" component={HomePage} />
+            </Switch>
 
         </main>
         </BrowserRouter>

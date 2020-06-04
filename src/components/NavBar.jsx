@@ -1,8 +1,8 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 import { Segment, Menu, Icon } from "semantic-ui-react";
 
-import logo from '../images/matteo-card.png';
+import Logo from '../Logo';
 
 class Navbar extends React.Component {
     constructor() {
@@ -27,9 +27,9 @@ class Navbar extends React.Component {
     const { activeItem } = this.state;
 
     return (
+        <>
     <Segment inverted id="nav">
-        <Menu stackable inverted pointing secondary>
-        <img id="logo-navbar" src={logo} />
+    <Menu stackable inverted pointing secondary>
         <Menu.Menu position="right">
             <Menu.Item
             name="home"
@@ -68,7 +68,11 @@ class Navbar extends React.Component {
             </Menu.Item>
         </Menu.Menu>
         </Menu>
+        <div className="logo">
+        <Logo />
+        </div>
     </Segment>
+    </>
     );
 }
 }

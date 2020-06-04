@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import homapageimg from '../images/hp1.jpg';
 
 
-export const HomePage = () => {
+const HomePage = () => {
 
     return (
         <div className='homepage'>
@@ -16,7 +16,12 @@ export const HomePage = () => {
         <Link to = "/aboutme" >
             <button> ESPLORA </button> 
         </Link>
+        <Link to='/contact'>
+            <button>CONTATTI</button>
+        </Link>
         </div>
     </div>
     )
 }
+
+export default HomePage;

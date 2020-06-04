@@ -46,7 +46,7 @@ class Navbar extends React.Component {
             onClick={this.handleItemClick}
             >
             {" "}
-            <Icon name="user" /> About Me
+            <Icon name="user" /> Su di Me
             </Menu.Item>
 
             <Menu.Item
@@ -55,7 +55,7 @@ class Navbar extends React.Component {
             onClick={this.handleItemClick}
             >
             {" "}
-            <Icon name="th" /> Service
+            <Icon name="th" /> Servizi
             </Menu.Item>
 
             <Menu.Item
@@ -64,7 +64,7 @@ class Navbar extends React.Component {
             onClick={this.handleItemClick}
             >
             {" "}
-            <Icon name="envelope" /> Contact
+            <Icon name="envelope" /> Contatti
             </Menu.Item>
         </Menu.Menu>
         </Menu>

@@ -11,13 +11,15 @@ const HomePage = () => {
         <img className='home' src={homapageimg} alt='Img broken' />
     <div className='matteo'>
         <h1> PERSONAL TRAINING </h1>
-        <h2> IN LANCING, WEST SUSSEX </h2>
-        <h4>Premium weight loss and lifestyle transformations which create long lasting, dramatic results to your health, body & mind.</h4>
+        <h2> FERRARA, EMILIA ROMAGNA </h2>
+        <h4>
+        Perdita di peso e trasformazioni dello stile di vita che creano risultati duraturi e ottimi per la salute, il corpo e la mente. 
+        </h4>
         <Link to = "/aboutme" >
-            <button> ESPLORA </button> 
+            <button> SCOPRI DI PIÙ </button> 
         </Link>
         <Link to='/contact'>
-            <button>CONTATTI</button>
+            <button>CONTATTAMI</button>
         </Link>
         </div>
     </div>

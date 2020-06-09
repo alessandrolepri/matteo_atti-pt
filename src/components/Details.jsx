@@ -1,11 +1,9 @@
-import React from 'react';
+// import React from 'react';
 
 
-const Details = () => {
+// const Details = () => {
 
-    return (
-        <h2>DETAILS</h2>
-    )
-}
+//     return <h1>details</h1>
+// }
 
-export default Details;
+// export default Details;

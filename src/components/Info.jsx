@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Map from '../Common/Map';
+import ContactForm from '../Common/ContactForm';
 import Footer from './Footer';
 
 class Info extends React.Component {
@@ -12,7 +13,7 @@ class Info extends React.Component {
         return (
             <>
                 <Map />
-                <h2 calssName='contattami'> Contattami </h2>
+                <h2 className='contattami'> Contattami </h2>
                 <div className='info'>
                     <div className='indirizzo'>
                         <h3>Indirizzo</h3>
@@ -30,6 +31,7 @@ class Info extends React.Component {
                         <p>Sab 08-19</p>
                         <p>Dom CHIUSO</p>
                     </div>
+                    <ContactForm />
                 </div>
                 <Footer />
             </>

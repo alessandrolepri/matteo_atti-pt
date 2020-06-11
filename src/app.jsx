@@ -19,6 +19,8 @@ import AboutMe from './components/AboutMe';
 import Info from './components/Info';
 import Training from './components/Training';
 import DropdownService from './Common/Servizi';
+import Nutrition from './components/Nutrition';
+import Mindset from './Common/Mindset';
 
 
 class App extends React.Component {
@@ -63,7 +65,9 @@ class App extends React.Component {
             <Route path="/aboutme" component={AboutMe} />
             <Route path="/contact" component={Info} />
             <Route path="/training" component={Training} />
-            < Route path = "/servizi" component={DropdownService} />
+            <Route path='/nutrition' component={Nutrition} />
+            <Route path='/mindset' component={Mindset} />
+            <Route path = "/servizi" component={DropdownService} />
             <Route path="/" component={HomePage} />
             </Switch>
             </Sidebar.Pusher>

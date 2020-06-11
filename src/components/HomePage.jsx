@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Footer from './Footer';
+import ButtonToContact from '../Common/ButtonToContact';
+import MoreAboutMe from '../Common/MoreAboutMe';
 
 
 import homapageimg from '../images/hp1.jpg';
@@ -21,12 +23,8 @@ const HomePage = () => {
             duraturi e ottimi per la salute, il corpo e la mente.
             </h4>
             <div className='hp-btn-link'>
-            <Link to="/aboutme">
-            <button className='btn-hp'> SCOPRI DI PIÙ </button>
-            </Link>
-            <Link to="/contact">
-            <button className='btn-hp'>CONTATTAMI</button>
-            </Link>
+            <MoreAboutMe />
+            <ButtonToContact />
             </div>
         </div>
     </section>

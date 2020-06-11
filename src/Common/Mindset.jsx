@@ -5,6 +5,7 @@ import apple from '../images/apple.png';
 import brain from '../images/brain.png';
 import style from '../images/style.png';
 import weight from '../images/weight.png';
+import test from '../images/test .png';
 
 
 import Footer from '../components/Footer';
@@ -20,7 +21,7 @@ const Mindset = () => {
             src={mindset} 
             width='100%' height='560px' />
             <div className='matteo'>
-                <h2 className='training' style={{maxWidth:'400px'}}> Mindset </h2>
+                <h2 className='training' style={{maxWidth:'400px'}}> MINDSET </h2>
             </div>
         </section>
 

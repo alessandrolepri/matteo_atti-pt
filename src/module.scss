@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 img.home {
@@ -37,9 +38,10 @@ section.training-offer {
     justify-content: space-evenly;
 }
 
-section.training-offer > div {
+section.training-offer>div {
     max-width: 400px;
     height: 600px;
+    margin-bottom: 30px;
 }
 
 button.dropdown-item {
@@ -174,7 +176,7 @@ section.consultation {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin: 100px 0 100px 0;
 }
 
 .step1 {
@@ -194,57 +196,6 @@ section.consultation {
     justify-content: center;
 }
 
-
-
-/*FOOTER*/
-
-footer {
-    background: #16222A;
-    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
-    background: linear-gradient(59deg, #3A6073, #16222A);
-    color: white;
-    margin-top: 100px;
-}
-
-footer a {
-    color: #fff;
-    font-size: 14px;
-    transition-duration: 0.2s;
-}
-
-footer a:hover {
-    color: #FA944B;
-    text-decoration: none;
-}
-
-.copy {
-    font-size: 12px;
-    padding: 10px;
-    border-top: 1px solid #FFFFFF;
-}
-
-.footer-middle {
-    padding-top: 2em;
-    color: white;
-}
-
-
-/*SOCİAL İCONS*/
-
-/* footer social icons */
-
-ul.social-network {
-    list-style: none;
-    display: inline;
-    margin-left: 0 !important;
-    padding: 0;
-}
-
-ul.social-network li {
-    display: inline;
-    margin: 0 5px;
-}
-
 .logo-nav {
     height: 84px;
 }
@@ -256,72 +207,6 @@ ul.social-network li {
 
 .paragraph {
     text-align: center;
-}
-
-
-/* footer social icons */
-
-.social-network a.icoFacebook:hover {
-    background-color: #3B5998;
-}
-
-.social-network a.icoLinkedin:hover {
-    background-color: #007bb7;
-}
-
-.social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i {
-    color: #fff;
-}
-
-.social-network a.socialIcon:hover,
-.socialHoverClass {
-    color: #44BCDD;
-}
-
-.social-circle li a {
-    display: inline-block;
-    position: relative;
-    margin: 0 auto 0 auto;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
-}
-
-.social-circle li i {
-    margin: 0;
-    line-height: 30px;
-    text-align: center;
-}
-
-.social-circle li a:hover i,
-.triggeredHover {
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -ms--transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    transition: all 0.2s;
-}
-
-.social-circle i {
-    color: #595959;
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    -ms-transition: all 0.8s;
-    transition: all 0.8s;
-}
-
-.social-network a {
-    background-color: #F9F9F9;
 }
 
 .marker {
@@ -338,7 +223,7 @@ ul.social-network li {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    justify-content: space-evenly;
+    padding: 20px;
 }
 
 .Contact-form {
@@ -359,8 +244,8 @@ section.about-mindset {
     align-items: center;
     flex-direction: column;
     margin-bottom: 130px;
-
-    & h2, p {
+    & h2,
+    p {
         text-align: center;
     }
 }
@@ -376,16 +261,14 @@ section.approach-description {
     padding: 20px;
 }
 
-section.approach-description > div {
+section.approach-description>div {
     margin-bottom: 140px;
     width: 470px;
-
     & p {
         text-align: center;
         border-top: 1px solid gray;
         padding-top: 30px;
     }
-
     & h3 {
         padding-bottom: 30px;
     }
@@ -397,4 +280,50 @@ section.approach-description > div {
     flex-wrap: wrap;
     align-items: center;
     padding: 20px;
+}
+
+img.ui.small.centered.image {
+    margin-bottom: 15px;
+}
+
+.ui.circular.button {
+    margin: 10px;
+}
+
+.offer {
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1366px) and (orientation: portrait) {
+    .map.mapboxgl-map {
+        margin: 0;
+    }
+    .my-step h3 {
+        width: auto;
+        font-weight: normal;
+    }
+}
+
+@media only screen and (max-width: 411px) and (orientation: portrait) {
+    .my-step {
+        & h2 {
+            width: 300px;
+        }
+        & h3 {
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: normal;
+            width: 300px;
+        }
+    }
+    .consultation .step1 {
+        padding: 20px;
+    }
+    .mindset-info {
+        padding: 20px;
+    }
+    section.approach-description>div,
+    section.about-mindset {
+        margin-bottom: 0;
+    }
 }

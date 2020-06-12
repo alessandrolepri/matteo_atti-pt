@@ -7,7 +7,7 @@ DropdownItem,
 } from "reactstrap";
 import { Link } from 'react-router-dom';
 
-const Example = (props) => {
+const MobileMenu = (props) => {
 const [dropdownOpen, setDropdownOpen] = useState(false);
 
 const toggle = () => setDropdownOpen((prevState) => !prevState);
@@ -31,4 +31,4 @@ return (
     );
 };
 
-export default Example;
+export default MobileMenu;

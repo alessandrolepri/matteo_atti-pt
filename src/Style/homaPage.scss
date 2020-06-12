@@ -1,0 +1,32 @@
+img.home {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    height: 95vh;
+}
+
+div#nav {
+    margin-bottom: auto;
+    position: relative;
+}
+
+div.matteo {
+    position: absolute;
+    left: 8%;
+    top: 213px;
+}
+
+button.btn-hp {
+    background-color: orangered;
+    height: 45px;
+    color: white;
+    border: none;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.hp-btn-link {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}

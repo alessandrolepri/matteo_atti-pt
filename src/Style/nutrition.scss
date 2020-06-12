@@ -1,0 +1,35 @@
+.nutritionig {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+.nutrition-coaching {
+    transform: scaleX(-1);
+}
+
+section.approach-description {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+section.approach-description>div {
+    margin-bottom: 140px;
+    width: 470px;
+    & p {
+        text-align: center;
+        border-top: 1px solid gray;
+        padding-top: 30px;
+    }
+    & h3 {
+        padding-bottom: 30px;
+    }
+}
+
+section.landing-page1 {
+    height: 100vh;
+}

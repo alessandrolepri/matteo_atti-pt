@@ -1,0 +1,33 @@
+@media only screen and (max-width: 1366px) and (orientation: portrait) {
+    .map.mapboxgl-map {
+        margin: 0;
+    }
+    .my-step h3 {
+        width: auto;
+        font-weight: normal;
+    }
+}
+
+@media only screen and (max-width: 411px) and (orientation: portrait) {
+    .my-step {
+        & h2 {
+            width: 300px;
+        }
+        & h3 {
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: normal;
+            width: 300px;
+        }
+    }
+    .consultation .step1 {
+        padding: 20px;
+    }
+    .mindset-info {
+        padding: 20px;
+    }
+    section.approach-description>div,
+    section.about-mindset {
+        margin-bottom: 0;
+    }
+}

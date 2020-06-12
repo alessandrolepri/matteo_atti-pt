@@ -1,0 +1,23 @@
+h2.training {
+    color: black;
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+section.training-offer {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+section.training-offer>div {
+    max-width: 400px;
+    height: 600px;
+    margin-bottom: 30px;
+}
+
+.offer {
+    padding: 20px;
+}

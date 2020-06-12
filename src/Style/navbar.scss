@@ -1,0 +1,45 @@
+#logo-navbar {
+    height: 52px;
+    width: 85px;
+}
+
+.logo-sidenav {
+    height: 75px;
+}
+
+div#sidebar {
+    top: 40px;
+}
+
+.logo {
+    height: 84px;
+    width: 151px;
+}
+
+.ui.compact.menu {
+    background-color: #1b1c1d;
+}
+
+i.dropdown.icon {
+    color: white;
+}
+
+.ui.inverted.menu {
+    justify-content: flex-end;
+}
+
+.logo-nav {
+    height: 84px;
+}
+
+button.dropdown-item {
+    text-transform: uppercase;
+    line-height: 2rem;
+}
+
+button.dropdown-toggle {
+    border: none;
+    color: white;
+    background-color: #1b1c1d;
+    cursor: pointer;
+}

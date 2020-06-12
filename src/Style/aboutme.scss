@@ -1,0 +1,77 @@
+.header-about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &.photo {
+        margin-bottom: 65px;
+    }
+}
+
+h2#me {
+    color: black!important;
+    text-align: center;
+}
+
+.story {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 150px 0 65px 0;
+}
+
+.description1 {
+    width: 560px;
+    text-align: justify;
+}
+
+img.step1 {
+    width: 300px;
+}
+
+img.health {
+    height: 250px;
+    width: 400px;
+}
+
+.photo1 {
+    margin-bottom: 100px;
+}
+
+.my-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 70px 70px;
+}
+
+.my-step h3 {
+    margin-top: 50px;
+}
+
+img.consult {
+    width: 400px;
+    height: 250px;
+}
+
+section.consultation {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 100px 0 100px 0;
+}
+
+.step1 {
+    width: 600px;
+    text-align: justify;
+    line-break: auto;
+}
+
+.ui.circular.image {
+    height: 200px;
+    margin: 70px 0 50px 0;
+}
+
+.paragraph {
+    text-align: center;
+}

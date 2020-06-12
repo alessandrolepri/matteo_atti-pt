@@ -11,6 +11,16 @@ import {
 } from 'semantic-ui-react'
 
 import './module.scss'
+import '../src/Style/homaPage.scss'
+import '../src/Style/training.scss'
+import '../src/Style/navbar.scss'
+import '../src/Style/media.scss'
+import '../src/Style/footer.scss'
+import '../src/Style/contact.scss'
+import '../src/Style/mindset.scss'
+import '../src/Style/aboutme.scss'
+import '../src/Style/nutrition.scss'
+
 
 import NavBar from './components/NavBar';
 import SideNav from './components/SideNav';

@@ -22,7 +22,7 @@ const AboutMe = () => {
                     </div>
                     <div className="paragraph">
                         <h3 id="info-me">Matteo Atti, Personal Trainer & Precision Nutrition </h3>
-                        <h4>awards</h4>
+                        <h4></h4>
                     </div>
                 </div>
             </section>

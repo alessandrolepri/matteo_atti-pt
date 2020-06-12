@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1366px) and (orientation: portrait) {
     .map.mapboxgl-map {
-        margin: 0;
+        margin: 0!important;
     }
     .my-step h3 {
         width: auto;
@@ -8,16 +8,16 @@
     }
 }
 
-@media only screen and (max-width: 411px) and (orientation: portrait) {
+@media only screen and (max-width: 425px) and (orientation: portrait) {
     .my-step {
+        margin: 0!important;
+        padding: 20px;
         & h2 {
             width: 300px;
         }
         & h3 {
-            margin-top: 0;
             font-size: 18px;
-            font-weight: normal;
-            width: 300px;
+            text-align: justify;
         }
     }
     .consultation .step1 {
@@ -25,9 +25,23 @@
     }
     .mindset-info {
         padding: 20px;
+        margin-top: 40px!important;
     }
-    section.approach-description>div,
+    section.approach-description > div,
     section.about-mindset {
-        margin-bottom: 0;
+        margin-bottom: 0!important;
+    }
+    div.matteo {
+        left: 2%;
+        top: 85px;
+        & h2.training {
+            font-size: 5.1vh;
+        }
+    }
+    section.landing-page1,
+    img.nutrition-coaching,
+    img.training-pic,
+    img.mindset {
+        height: 36vh!important;
     }
 }

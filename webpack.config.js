@@ -95,4 +95,7 @@ module.exports = {
       Utils: path.resolve (resolveApp ('src'), 'utils'),
     },
   },
+  performance: {
+    hints: false
+  }
 };

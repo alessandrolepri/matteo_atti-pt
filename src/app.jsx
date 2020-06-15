@@ -10,6 +10,8 @@ import {
     Sidebar
 } from 'semantic-ui-react'
 
+import "@babel/polyfill";
+
 import './module.scss'
 import '../src/Style/homaPage.scss'
 import '../src/Style/training.scss'

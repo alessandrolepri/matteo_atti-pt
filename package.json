@@ -9,7 +9,8 @@
         "serve": "webpack-dev-server --mode=development",
         "build": "webpack -p",
         "start": "node index.js",
-        "awesome": "webpack-dev-server --open --hot --mode development"
+        "awesome": "webpack-dev-server --open --hot --mode development",
+        "nodemon": "nodemon node index.js"
     },
     "repository": {
         "type": "git",

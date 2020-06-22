@@ -32,15 +32,15 @@ const AboutMe = () => {
                 <h3>
                     Becoming a Personal Trainer was an obvious and natural choice
                     for me as I am passionate about healthy living and sharing my expertise 
-                    and knowledge with people. <br /> 
+                    and knowledge with people.
                     I worked for a number of corporate gyms as well as at an award winning world top 100 
                     hotel at the start of my career but I felt that I could give more value to my clients 
-                    which went beyond the little time they spent at the gym. <br />
+                    which went beyond the little time they spent at the gym.
                     As one of the youngest trainers to become freelance, I&#39;ve been coaching busy, 
-                    everyday people in healthy lifestyle living for the last 8&nbsp;years.<br />
+                    everyday people in healthy lifestyle living for the last 8&nbsp;years.
                     My training ethos is to encourage, inspire, educate and support clients to achieve 
                     the best version of themselves, in a progressive, enjoyable, safe and effective
-                    manner.<br/>
+                    manner.
                     I specialise in weight management (Fat loss &amp; muscle toning).
                 </h3>
                 </section>

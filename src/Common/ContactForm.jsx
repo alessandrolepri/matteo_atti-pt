@@ -16,19 +16,11 @@ class ContactForm extends React.Component {
     axios({
       method: "POST",
       url: "/contact",
-      data: this.state,
-    }).then((response) => {
-      if (response.data.status === "success") {
-        alert("Message Sent.");
-        this.resetForm();
-      } else if (response.data.status === "fail") {
-        alert("Message failed to send.");
-      }
-    });
+    })
   }
 
-  resetForm() {
-    this.setState({ name: "", email: "", message: "" });
+  handleResetForm = () => {
+    this.setState({name: "", email: "", message: ""});
   }
 
   render() {
@@ -74,6 +66,7 @@ class ContactForm extends React.Component {
             type="submit"
             className="btn btn-primary"
             onSubmit={this.handleSubmit.bind(this)}
+            onClick={this.handleResetForm}
           >
             Submit
           </button>

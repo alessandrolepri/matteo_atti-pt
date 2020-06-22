@@ -82,6 +82,11 @@ module.exports = {
       filename: 'index.html',
       inject: 'body',
     }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        MAPBOX_GL: JSON.stringify(process.env.MAPBOX_GL)
+      }
+    })
   ],
   resolve: {
     // File extensions. Add others and needed (e.g. scss, json)

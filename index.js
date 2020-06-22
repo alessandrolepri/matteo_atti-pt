@@ -15,16 +15,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.post('/contact', (req, res) => {
     console.log(req.body)
 
-        const htmlEmail = `
-        <h3>Contact Details</h3>
-        <ul>
-            <li>Name: ${req.body.name}</li>
-            <li>Email: ${req.body.email}</li>
-        </ul>
-        <h3>Message</h3>
-        <p>${req.body.message}</p>
-        `
-
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             secure: true,
@@ -32,22 +22,21 @@ app.post('/contact', (req, res) => {
                 user: process.env.EMAIL_USER,
                 pass: process.env.EMAIL_PASS
             }
-        })
+        });
 
-        function sendMail() {
-            transporter.sendMail({
-                name: req.body.name,
-                to: process.env.EMAIL_USER,
-                name: req.body.name,
-                replyTo: req.body.email,
-                subject: "New Message",
-                text: req.body.message
-            })
-
-            .then(info => console.log("Email Sent", info))
-            .catch(err => console.log(err))
+        const mailOptions = {
+            from: req.body.name,
+            subject: "New Message",
+            text: req.body.message
         }
-        sendMail();
+
+        transporter.sendMail(mailOptions, function(error, info){
+            if(error) {
+                console.log(error)
+            } else {
+                console.log("Email sent: " + info.response)
+            }
+        })
 
 })
 

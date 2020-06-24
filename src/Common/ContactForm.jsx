@@ -16,7 +16,14 @@ class ContactForm extends React.Component {
     axios({
       method: "POST",
       url: "/contact",
-    })
+      data: this.state,
+    }).then((response) => {
+      if (response.data.status === "success") {
+        info("Message Sent.");
+      } else if (response.data.status === "fail") {
+        alert("Message failed to send.");
+      }
+    });
   }
 
   handleResetForm = () => {
@@ -66,7 +73,7 @@ class ContactForm extends React.Component {
             type="submit"
             className="btn btn-primary"
             onSubmit={this.handleSubmit.bind(this)}
-            onClick={this.handleResetForm}
+            // onClick={this.handleResetForm}
           >
             Submit
           </button>

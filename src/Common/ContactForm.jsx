@@ -7,28 +7,27 @@ class ContactForm extends React.Component {
     this.state = {
       name: "",
       email: "",
-      message: "",
+      message: ""
     };
   }
 
   handleSubmit(e) {
     e.preventDefault();
+    this.setState({ showMessage: false })
     axios({
       method: "POST",
       url: "/contact",
       data: this.state,
-    }).then((response) => {
-      if (response.data.status === "success") {
-        info("Message Sent.");
-      } else if (response.data.status === "fail") {
-        alert("Message failed to send.");
-      }
-    });
+    })
+    .then(() => console.log('Email sent'))
+    .catch((err) => console.log(err, "ERROR OCCUR"))
   }
 
   handleResetForm = () => {
+    setTimeout(() => {
     this.setState({name: "", email: "", message: ""});
-  }
+  }, 1000)
+}
 
   render() {
     return (
@@ -73,10 +72,17 @@ class ContactForm extends React.Component {
             type="submit"
             className="btn btn-primary"
             onSubmit={this.handleSubmit.bind(this)}
-            // onClick={this.handleResetForm}
+            onClick={this.handleResetForm}
           >
             Submit
           </button>
+          {this.state.showMessage && (
+            <div>
+              <FlashMessage duration={5000}>
+                <strong>I will disapper in 5 seconds!</strong>
+              </FlashMessage>
+            </div>
+          )}
         </form>
       </div>
     );

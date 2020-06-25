@@ -28,12 +28,18 @@ app.use(express.static(`${__dirname}/dist`));
 app.get("/*", (req, res) => res.sendFile(`${__dirname}/dist/index.html`));
 
 app.post("/contact", (req, res) => {
-    console.log(req.body)
+    // console.log(req.body)
+    res.set('Content-Type', 'application/json')
+    const jsonData = JSON.stringify(req.body)
+    res.status(201)
+    res.json()
     const email = process.env.EMAIL_USER
     const pass = process.env.EMAIL_PASS
+    const service = process.env.SERVICE
+    const emailTo = process.env.EMAIL_TO
 
     const transporter = nodemailer.createTransport({
-    service: "gmail",
+    service: service,
     secure: true,
     auth: {
         user: email,
@@ -53,7 +59,7 @@ const mailOptions = {
     from: req.body.name,
     email: req.body.email,
     replyTo: req.body.email,
-    to: email,
+    to: emailTO,
     subject: "Hai un nuovo messaggio",
     html: output
 }

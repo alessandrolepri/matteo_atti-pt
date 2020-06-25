@@ -73,6 +73,7 @@ class App extends React.Component {
               <Sidebar.Pusher>
                 <NavBar hideSidebar={this.handleSidebarHide} handleShowClick={this.handleShowClick} />
 
+
             <Switch>
             <Route path="/aboutme" component={AboutMe} />
             <Route path="/contact" component={Info} />

@@ -5,9 +5,8 @@ const ButtonExampleCircularSocial = () => (
 
     <div>
         <Button circular color='facebook' icon='facebook' />
-        <Button circular color='instagram red' icon='instagram' />
+        <Button circular color='instagram' icon='instagram' />
         <Button circular color='linkedin' icon='linkedin' />
-        <Button circular color='google plus' icon='google plus' />
     </div>
 )
 

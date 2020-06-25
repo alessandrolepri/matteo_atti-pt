@@ -59,7 +59,7 @@ render(){
         active = {this.props.location.pathname === "/aboutme"}
         onClick={this.handleItemClick} >
         <Icon name='user'/>
-        Su di Me
+        Chi sono
         </Menu.Item>
 
         <Menu.Item

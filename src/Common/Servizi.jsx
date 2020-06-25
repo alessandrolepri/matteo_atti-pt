@@ -18,13 +18,13 @@ return (
     <DropdownMenu>
         <DropdownItem header>Scegli un servizio</DropdownItem>
             <Link to='/training'>
-            <DropdownItem>Training</DropdownItem>
+            <DropdownItem isOpen={dropdownOpen} toggle={toggle}>Allenamento</DropdownItem>
             </Link>
             <Link to="/nutrition">
-            <DropdownItem>Nutrition</DropdownItem>
+            <DropdownItem isOpen={dropdownOpen} toggle={toggle}>Nutrizione</DropdownItem>
             </Link>
             <Link to='/mindset'>
-            <DropdownItem>Mindset</DropdownItem>
+            <DropdownItem isOpen={dropdownOpen} toggle={toggle}>Mentalità</DropdownItem>
             </Link>
         </DropdownMenu>
     </Dropdown>

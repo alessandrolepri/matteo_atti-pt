@@ -23,15 +23,15 @@ const Footer = () => {
                 <Grid.Column width={3}>
                 <Header inverted as='h4' content='Servizi' />
                 <List link inverted stackable>
-                    <List.Item as='a' href='/training'>Training</List.Item>
-                    <List.Item as='a' href='/nutrition'>Nutrition</List.Item>
-                    <List.Item as='a' href='/mindset'>Mindset</List.Item>
+                    <List.Item as='a' href='/training'>Allenamento</List.Item>
+                    <List.Item as='a' href='/nutrition'>Nutrizione</List.Item>
+                    <List.Item as='a' href='/mindset'>Mentalità</List.Item>
                 </List>
                 </Grid.Column>
                 <Grid.Column width={3}>
-                <Header inverted as='h4' content='Info' />
+                <Header inverted as='h4' content='Informazioni' />
                 <List link inverted>
-                    <List.Item as='a' href='/aboutme'>Su di me</List.Item>
+                    <List.Item as='a' href='/aboutme'>Chi sono</List.Item>
                     <List.Item as='a' href='#'>Term & Conditions</List.Item>
                     <List.Item as='a' href='#'>Privacy</List.Item>
                 </List>

@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import ButtonToContact from '../Common/ButtonToContact';
 import MoreAboutMe from '../Common/MoreAboutMe';
+import MindsetApproach from '../Common/MindsetApproach'
+import PersonalCredo from './PersonalCredo'
+import FreeConsultation from './FreeConsultation'
+import ServiceOffer from './ServiceOffer'
 
 
 import homapageimg from '../images/hp1.jpg';
@@ -28,6 +32,10 @@ const HomePage = () => {
             </div>
         </div>
     </section>
+    <MindsetApproach />
+    <PersonalCredo />
+    <FreeConsultation />
+    <ServiceOffer />
     <Footer />
     </div>
 

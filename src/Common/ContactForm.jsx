@@ -76,12 +76,6 @@ class ContactForm extends React.Component {
           >
             Submit
           </button>
-          {this.state.showMessage && (
-            <div>
-              <FlashMessage duration={5000}>
-                <strong>I will disapper in 5 seconds!</strong>
-              </FlashMessage>
-            </div>
           )}
         </form>
       </div>

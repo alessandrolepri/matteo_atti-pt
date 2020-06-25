@@ -19,49 +19,51 @@ const Training = () => {
             <h2 className="training"> TRAINING </h2>
           </div>
         </section>
-
         <section className="training-offer">
           <div className="offers">
             <img className="private" src={online} width="400px" />
             <div className="offer">
               <h3>SEMI-PRIVATE</h3>
-              <price>FROM £192/MONTH</price>
+              <price>A PARTIRE DA €65/MESE</price>
               <p>
-                All plans start with a consultation followed by an initial one
-                month commitment, after which there is the opportunity to make
-                longer commitments and save money
+                Il Semi Private Coaching è l&#39;ideale se lavori di più e senti
+                l&#39;allenamento più motivato con un amico e vuoi risparmiare
+                enormemente sui costi di allenamento personale. Lavorerai
+                attraverso il programma nutrizionale personalizzato che creo per
+                te e ti eserciterai insieme al tuo partner per raggiungere i
+                tuoi obiettivi di salute e fitness.
               </p>
-              <p>
-                Semi Private Coaching is ideal if you work harder and feel more
-                motivated training with a friend and want to make huge savings
-                on personal training costs. You will work through the
-                individualised nutrition program I create for you, and exercise
-                alongside your partner to accomplish your health and fitness
-                goals.
-              </p>
-              <ButtonToContact />
+              <ul>
+                <li>Test mensili di salute e fitness</li>
+                <li>Analisi e sistema nutrizionale</li>
+                <li>Piano di integrazione</li>
+                <li>Analisi e piano dello stile di vita</li>
+                <li>Revisioni periodiche dei progressi</li>
+              </ul>
             </div>
           </div>
 
           <div className="offers">
             <img className="on-demand" src={online} width="400px" />
             <div className="offer">
-              <h3>ONLINE TRAINING</h3>
-              <price>FROM £192/MONTH</price>
+              <h3>ALLENAMENTO ONLINE</h3>
+              <price>A PARTIRE DA €60/MESE</price>
               <p>
-                All plans start with a consultation followed by an initial one
-                month commitment, after which there is the opportunity to make
-                longer commitments and save money
+                Il coaching online è l&#39;ideale se preferisci allenarti a casa
+                (o da remoto), ma desideri comunque tutti i vantaggi che la
+                formazione personale ha da offrire, come sessioni individuali
+                virtuali, nutrizione personalizzata e su misura e coaching sullo
+                stile di vita.
               </p>
-              <p>
-                Semi Private Coaching is ideal if you work harder and feel more
-                motivated training with a friend and want to make huge savings
-                on personal training costs. You will work through the
-                individualised nutrition program I create for you, and exercise
-                alongside your partner to accomplish your health and fitness
-                goals.
-              </p>
-              <ButtonToContact />
+              <ul>
+                <li>Test mensili di salute e fitness</li>
+                <li>Analisi e sistema nutrizionale</li>
+                <li>Piano di integrazione</li>
+                <li>Analisi e piano dello stile di vita</li>
+                <li>Revisioni periodiche dei progressi</li>
+                <li>Motivatore</li>
+                <li>Sessioni FACETIME / SKYPE individuali</li>
+              </ul>
             </div>
           </div>
 
@@ -69,24 +71,34 @@ const Training = () => {
             <img className="oneToOne" src={online} width="400px" />
             <div className="offer">
               <h3>ONE-TO-ONE</h3>
-              <price>FROM £192/MONTH</price>
+              <price>A PARTIRE DA €120/MESE</price>
               <p>
-                All plans start with a consultation followed by an initial one
-                month commitment, after which there is the opportunity to make
-                longer commitments and save money
+                Il coaching individuale è l&#39;ideale per te se hai bisogno di
+                un approccio più personale al tuo allenamento, mentalità e
+                nutrizione. Lavorerai con me personalmente nel mio studio
+                privato per valutare la tua situazione attuale e insieme
+                scopriremo modi rapidi, sicuri ed efficaci per aiutarti a
+                bruciare, testardo grasso, sentirti più energico e raggiungere i
+                tuoi obiettivi.
               </p>
-              <p>
-                Semi Private Coaching is ideal if you work harder and feel more
-                motivated training with a friend and want to make huge savings
-                on personal training costs. You will work through the
-                individualised nutrition program I create for you, and exercise
-                alongside your partner to accomplish your health and fitness
-                goals.
-              </p>
-              <ButtonToContact />
+              <ul>
+                <li>Test mensili di salute e fitness</li>
+                <li>Analisi e sistema nutrizionale</li>
+                <li>Piano di integrazione</li>
+                <li>Analisi e piano dello stile di vita</li>
+                <li>Revisioni periodiche dei progressi</li>
+                <li>Lezioni individuali</li>
+                <li>Motivatore</li>
+                <li>Sessioni FACETIME / SKYPE individuali</li>
+                <li>Coaching per lo shopping alimentare</li>
+              </ul>
             </div>
           </div>
         </section>
+        <div className="btn-training">
+        <ButtonToContact />
+        <hr></hr>
+        </div>
         <Footer />
       </div>
     );

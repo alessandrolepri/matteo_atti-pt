@@ -12,12 +12,11 @@ section.training-offer {
     justify-content: space-evenly;
 }
 
-section.training-offer>div {
-    max-width: 400px;
-    height: 600px;
-    margin-bottom: 30px;
+section.training-offer > div {
+    text-align: justify;
 }
 
-.offer {
+.offers {
     padding: 20px;
+    width: 400px;
 }

@@ -73,7 +73,7 @@ class Navbar extends React.Component {
             name="aboutme"
             active={this.props.location.pathname === "/aboutme"}
             onClick={this.handleItemClick}>
-            <Icon name="user" /> Su di Me
+            <Icon name="user" /> Chi sono
             </Menu.Item>
 
             <Menu.Item>

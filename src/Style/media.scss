@@ -27,8 +27,7 @@
         padding: 20px;
         margin-top: 40px!important;
     }
-    
-    section.approach-description > div,
+    section.approach-description>div,
     section.about-mindset {
         margin-bottom: 0!important;
     }
@@ -44,5 +43,14 @@
     img.training-pic,
     img.mindset {
         height: 36vh!important;
+    }
+}
+
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+    .offer {
+        padding: 40px;
+    }
+    section.training-offer {
+        height: auto;
     }
 }

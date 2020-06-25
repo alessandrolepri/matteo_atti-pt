@@ -22,6 +22,8 @@ import '../src/Style/contact.scss'
 import '../src/Style/mindset.scss'
 import '../src/Style/aboutme.scss'
 import '../src/Style/nutrition.scss'
+import '../src/Style/PersonalCredo.scss'
+import '../src/Style/specialOffer.scss'
 
 
 import NavBar from './components/NavBar';

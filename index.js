@@ -59,7 +59,7 @@ const mailOptions = {
     from: req.body.name,
     email: req.body.email,
     replyTo: req.body.email,
-    to: emailTO,
+    to: emailTo,
     subject: "Hai un nuovo messaggio",
     html: output
 }

@@ -44,13 +44,96 @@
     img.mindset {
         height: 36vh!important;
     }
+    .offer {
+        padding: 35px;
+    }
+    .offers {
+        padding: 5px!important;
+        width: auto;
+    }
 }
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
     .offer {
-        padding: 40px;
+        padding: 60px;
     }
     section.training-offer {
         height: auto;
+    }
+    section.free-consultation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        margin-bottom: 80px;
+    }
+    .newclient {
+        // width: 400px;
+        height: 260px;
+        margin: 0 auto;
+    }
+    p.client {
+        background-color: green;
+        width: 239px;
+        height: 70px;
+        text-align: center;
+        padding: 0 auto;
+        color: white;
+        padding-top: 12px;
+        transform: skewY(-10deg);
+        z-index: 3;
+        position: relative;
+        font-size: 30px;
+    }
+    p.special-offer {
+        background-color: red;
+        width: 143px;
+        height: 70px;
+        text-align: center;
+        color: white;
+        padding-top: 12px;
+        transform: skewY(7deg);
+        margin: -19px 0px 0px 66px;
+        z-index: 2;
+        position: relative;
+        font-size: 30px;
+    }
+    p.speciale {
+        background-color: yellow;
+        width: 141px;
+        height: 70px;
+        text-align: center;
+        color: white;
+        padding-top: 12px;
+        transform: skewY(-10deg);
+        font-size: 30px;
+    }
+    .info-consultation {
+        width: 600px;
+        text-align: justify;
+        line-break: auto;
+    }
+    p {
+        line-height: 2rem;
+    }
+    h5 {
+        font-size: 26px;
+    }
+    .opzioni {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+    .info-servizi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        margin: 0 auto;
+        width: 90vw;
     }
 }

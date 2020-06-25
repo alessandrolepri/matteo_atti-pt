@@ -2,13 +2,15 @@ section.free-consultation {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 20px;
-    height: 55vh;
+    margin-bottom: 80px;
 }
 
 .newclient {
-    width: 400px;
+    // width: 400px;
+    height: 260px;
+    // margin: 0 auto;
 }
 
 p.client {
@@ -18,7 +20,7 @@ p.client {
     text-align: center;
     padding: 0 auto;
     color: white;
-    padding-top: 12px;
+    padding-top: 20px;
     transform: skewY(-10deg);
     z-index: 3;
     position: relative;
@@ -31,7 +33,7 @@ p.special-offer {
     height: 70px;
     text-align: center;
     color: white;
-    padding-top: 12px;
+    padding-top: 20px;
     transform: skewY(7deg);
     margin: -19px 0px 0px 66px;
     z-index: 2;
@@ -45,7 +47,7 @@ p.speciale {
     height: 70px;
     text-align: center;
     color: white;
-    padding-top: 12px;
+    padding-top: 20px;
     transform: skewY(-10deg);
     font-size: 30px;
 }

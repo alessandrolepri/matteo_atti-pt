@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import lifestyle from '../images/lifestyle.png';
 
@@ -10,19 +10,19 @@ const StepThree = () => {
                 <img className='consult' src={lifestyle} alt='consultation' />
                 <div className='step1'>
                     <h2>
-                        STEP 3:
+                        FASE 3:
                     </h2>
                     <h4> 
-                        LIFESTYLE ASSESSMENT & PLAN
+                        VALUTAZIOE E PIANO DELLO STILE DI VITA
                     </h4>   
                     <p>
-                        Did you know that 80% of your weight loss or weight management results 
-                        come from the time you spend out of the gym?! Lets say you train at the gym 
-                        4 times a week for 1 hour at a time, that amounts to less than 2% of your week.
-                        Therefore, if you don&#39;t have a suitable plan for your time outside the gym then you 
-                        are severely compromising your results.​
-                        I go beyond the gym walls and ensure you are living a lifestyle that will help to get 
-                        you into shape and feeling great!
+                        Lo sapevi che l&#39;80% della tua perdita di peso o dei risultati di gestione del peso
+                        vieni dal tempo che passi fuori dalla palestra ?! Diciamo che ti alleni in palestra
+                        4 volte a settimana per 1 ora alla volta, pari a meno del 2% della settimana.
+                        Pertanto, se non hai un piano adatto per il tuo tempo fuori dalla palestra, allora tu
+                        stanno compromettendo gravemente i tuoi risultati.
+                        Vado oltre le pareti della palestra e ti assicuro che stai vivendo uno stile di vita che ti aiuterà a ottenere
+                        ti forma e ti senti benissimo!
                     </p>
                 </div>
             </section>

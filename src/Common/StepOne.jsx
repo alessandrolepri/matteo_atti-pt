@@ -5,25 +5,30 @@ import consultation from '../images/consultation.jpg';
 const StepOne = () => {
 
     return (
+
         <React.Fragment>
-                        <section className='consultation'>
-                <img className='consult' src={consultation} alt='consultation' />
-                <div className='step1'>
-                    <h2>
-                        STEP 1:
-                    </h2>
-                    <h4> 
-                        FREE CONSULTATION
-                    </h4>   
-                    <p>
-                        Before starting your fitness journey we will book a 60 minute consultation, 
-                        either over the phone or at my private studio, where we will get an opportunity
-                        to talk about your needs, your goals, lifestyle habits and your diet and for us to
-                        establish if we are a good fit to work together.I will prescribe the best path
-                        forward for you to progress and achieve more than you thought possible.
-                    </p>
-                </div>
-            </section>
+        <section className="consultation">
+            <img className="consult" src={consultation} alt="consultation" />
+            <div className="step1">
+            <h2>FASE 1:</h2>
+                <h4>CONSULTAZIONE GRATUITA</h4>
+                <p>
+                Prima di iniziare il tuo viaggio di fitness prenoteremo una
+                consulenza di 60 minuti, al telefono o nel mio studio privato,
+                dove avremo l&#39;opportunità di parlare delle tue esigenze, dei tuoi
+                obiettivi, delle abitudini di vita e della tua dieta e di
+                stabilire se è una buona idea lavorare insieme. Ti prescriverò il
+                percorso migliore per farti progredire e raggiungere più di quanto
+                credevi possibile.Prima di iniziare il tuo viaggio di fitness
+                prenoteremo una consulenza di 60 minuti, al telefono o nel mio
+                studio privato, dove avremo l&#39;opportunità di parlare delle tue
+                esigenze, dei tuoi obiettivi, delle abitudini di vita e della tua
+                dieta e di stabilire se è una buona idea lavorare insieme. Ti
+                prescriverò il percorso migliore per farti progredire e
+                raggiungere più di quanto credevi possibile.
+                </p>
+            </div>
+        </section>
         </React.Fragment>
     );
 }

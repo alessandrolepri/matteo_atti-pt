@@ -51,6 +51,7 @@ const output = `
     <h3>Hai un nuovo messaggio da ${req.body.name}</h3>
     <p>Email: ${req.body.email}</p>
     <p>Nome: ${req.body.name}</p>
+    <p>Telefono: ${req.body.mobile}</p>
     <h4>Messaggio:</h4>
     <p>${req.body.message}</p>
 `

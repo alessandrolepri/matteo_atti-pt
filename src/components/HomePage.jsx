@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import Footer from './Footer';
 import ButtonToContact from '../Common/ButtonToContact';
@@ -8,6 +7,7 @@ import MindsetApproach from '../Common/MindsetApproach'
 import PersonalCredo from './PersonalCredo'
 import FreeConsultation from './FreeConsultation'
 import ServiceOffer from './ServiceOffer'
+import MindsetHeader from './MindsetHeader';
 
 
 import homapageimg from '../images/hp1.jpg';
@@ -32,6 +32,7 @@ const HomePage = () => {
             </div>
         </div>
     </section>
+    <MindsetHeader />
     <MindsetApproach />
     <PersonalCredo />
     <FreeConsultation />

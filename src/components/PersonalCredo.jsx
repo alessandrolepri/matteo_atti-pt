@@ -27,7 +27,9 @@ class PersonalCredo extends React.Component {
                 <li>Trascorrere ore a cucinare o allenarsi</li>
                 <li>Condividi una palestra con gli altri</li>
             </ul>
+            <div className='btn-credo'>
             <MoreAboutMe />
+            </div>
             </section>
         )
     }

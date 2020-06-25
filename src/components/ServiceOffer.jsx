@@ -9,7 +9,7 @@ class ServiceOffer extends React.Component {
         return (
             <section className='service-offer'>
             <div className='info-servizi'>
-                <h3>SERVIZI</h3>
+                <h2>I MIEI SERVIZI...</h2>
                 <p>
                 Offro un servizio completo che va ben oltre per farti entrare nella migliore forma 
                 della tua vita e la sensazione di essere grandi, sia che tu sia un principiante assoluto, 

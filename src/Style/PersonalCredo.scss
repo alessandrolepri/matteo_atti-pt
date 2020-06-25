@@ -1,7 +1,22 @@
 section.personal-credo {
     margin: 0 auto;
     padding: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 140px;
+}
+
+.personal-credo h2 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.personal-credo ul {
+    padding: 0 200px;
+}
+
+.personal-credo p {
+    text-align: center;
+    padding: 0 200px;
+    margin-bottom: 60px;
 }
 
 .personal-credo>ul li:last-child {

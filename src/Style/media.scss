@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1366px) and (orientation: portrait) {
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
     .map.mapboxgl-map {
         margin: 0!important;
     }
@@ -42,8 +42,24 @@
     img.nutrition-coaching,
     img.training-pic,
     img.mindset,
-    img.home {
+    img.home-mobile {
         height: 36vh!important;
+    }
+    img.home {
+        display: none;
+    }
+    img.home-mobile {
+        display: block;
+    }
+    .matteo h1,
+    .matteo h2 {
+        display: none
+    }
+    h4 {
+        margin-top: 240px;
+    }
+    section.about-mindset {
+        padding-top: 140px;
     }
     .offer {
         padding: 35px;
@@ -51,6 +67,9 @@
     .offers {
         padding: 5px!important;
         width: auto;
+    }
+    .info-servizi p {
+        width: 78.125vw!important;
     }
 }
 
@@ -70,7 +89,6 @@
         margin-bottom: 80px;
     }
     .newclient {
-        // width: 400px;
         height: 260px;
         margin: 0 auto;
     }

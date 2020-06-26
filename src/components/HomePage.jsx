@@ -11,7 +11,7 @@ import MindsetHeader from './MindsetHeader';
 
 
 import homapageimg from '../images/hp1.jpg';
-
+import mobileCard from '../images/matteo-card.png'
 
 const HomePage = () => {
 
@@ -19,6 +19,7 @@ const HomePage = () => {
     <div>
     <section className="landing-page">
     <img className="home" src={homapageimg} alt="Img broken" />
+    <img className="home-mobile" src={mobileCard} width="100%" />
         <div className="matteo">
             <h1> PERSONAL TRAINING </h1>
             <h2> FERRARA, EMILIA ROMAGNA </h2>

@@ -10,15 +10,17 @@ section.personal-credo {
 }
 
 .personal-credo ul {
-    padding: 0 200px;
+    padding-top: 80px;
+    margin: 0 auto;
+    width: 78.125vw;
 }
 
 .personal-credo p {
-    text-align: center;
-    padding: 0 200px;
-    margin-bottom: 60px;
+    text-align: justify;
+    margin: 0 auto;
+    width: 53.125vw;
 }
 
-.personal-credo>ul li:last-child {
+.personal-credo > ul li:last-child {
     padding-bottom: 50px;
 }

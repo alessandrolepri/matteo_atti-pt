@@ -11,8 +11,8 @@ const Mindset = () => {
     return (
       <>
         <div>
-          <section className="landing-page">
-            <img className="mindset" src={mindset} width="100%" />
+          <section className="landing-page1">
+            <img className="mindset" src={mindset} width="100%" alt="mindset" />
             <div className="matteo">
               <h2 className="training" style={{ maxWidth: "400px" }}>
                 MINDSET

@@ -18,7 +18,7 @@ class ServiceOffer extends React.Component {
             </div>
             <div className='opzioni'>
                 <div className="offers">
-                <img className="oneToOne" src={online} width="400px" />
+                <img className="oneToOne" src={online} width="400px" alt="one-to-one lesson" />
                 <div className="offer">
                     <h3>ALLENAMENTO</h3>
                     <p>
@@ -28,7 +28,7 @@ class ServiceOffer extends React.Component {
                 </div>
             </div>
             <div className="offers">
-            <img className="oneToOne" src={online} width="400px" />
+            <img className="oneToOne" src={online} width="400px" alt="online" />
                 <div className="offer">
                     <h3>NUTRIZIONE</h3>
                     <p>
@@ -37,7 +37,7 @@ class ServiceOffer extends React.Component {
                     </div>
                 </div>
             <div className="offers">
-            <img className="oneToOne" src={online} width="400px" />
+            <img className="oneToOne" src={online} width="400px" alt="online" />
                 <div className="offer">
                     <h3>MOTIVAZIONE</h3>
                     <p>

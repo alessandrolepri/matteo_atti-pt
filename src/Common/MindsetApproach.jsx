@@ -11,7 +11,7 @@ const MindsetApproach = () => {
     
         <section className="approach-description">
         <div className="nutritionig">
-            <img src={apple} />
+            <img src={apple} alt="apple" />
             <h3>1. Nutrizione</h3>
             <p>
             Scopri e attua strategie nutrizionali che trasformeranno il tuo
@@ -19,7 +19,7 @@ const MindsetApproach = () => {
             </p>
         </div>
         <div div className="nutritionig">
-            <img src={weight} />
+            <img src={weight} alt="weight" />
             <h3>2. Esercizio</h3>
             <p>
             Programma di esercizi su misura, strutturato, efficiente in termini
@@ -28,7 +28,7 @@ const MindsetApproach = () => {
             </p>
         </div>
         <div className="nutritionig">
-            <img src={brain} />
+            <img src={brain} altr="brain" />
             <h3>3. Mentalità</h3>
             <p>
             Applicando i principi della mentalità al tuo ardente desiderio di
@@ -37,7 +37,7 @@ const MindsetApproach = () => {
             </p>
         </div>
         <div className="nutritionig">
-            <img src={style} />
+            <img src={style} alt="style" />
             <h3>4. Stile di Vita</h3>
             <p>
             Scopri e attua le abitudini di vita vitali per iniziare a sentirti

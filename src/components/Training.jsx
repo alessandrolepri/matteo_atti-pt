@@ -13,15 +13,15 @@ import ButtonToContact from '../Common/ButtonToContact';
 const Training = () => {
     return (
       <div>
-        <section className="landing-page">
-          <img className="training-pic" src={gym} width="100%" height="560px" />
+        <section className="landing-page1">
+          <img className="training-pic" src={gym} width="100%" height="560px" alt="gym" />
           <div className="matteo">
             <h2 className="training"> TRAINING </h2>
           </div>
         </section>
         <section className="training-offer">
           <div className="offers">
-            <img className="private" src={online} width="400px" />
+            <img className="private" src={online} width="400px" alt="online" />
             <div className="offer">
               <h3>SEMI-PRIVATE</h3>
               <price>A PARTIRE DA €65/MESE</price>
@@ -44,7 +44,7 @@ const Training = () => {
           </div>
 
           <div className="offers">
-            <img className="on-demand" src={online} width="400px" />
+            <img className="on-demand" src={online} width="400px" alt="online" />
             <div className="offer">
               <h3>ALLENAMENTO ONLINE</h3>
               <price>A PARTIRE DA €60/MESE</price>
@@ -68,7 +68,7 @@ const Training = () => {
           </div>
 
           <div className="offers">
-            <img className="oneToOne" src={online} width="400px" />
+            <img className="oneToOne" src={online} width="400px" alt="one-to-one lesson" />
             <div className="offer">
               <h3>ONE-TO-ONE</h3>
               <price>A PARTIRE DA €120/MESE</price>
@@ -89,7 +89,6 @@ const Training = () => {
                 <li>Revisioni periodiche dei progressi</li>
                 <li>Lezioni individuali</li>
                 <li>Motivatore</li>
-                <li>Sessioni FACETIME / SKYPE individuali</li>
                 <li>Coaching per lo shopping alimentare</li>
               </ul>
             </div>

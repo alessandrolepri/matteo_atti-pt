@@ -19,7 +19,7 @@ const HomePage = () => {
     <div>
     <section className="landing-page">
     <img className="home" src={homapageimg} alt="Img broken" />
-    <img className="home-mobile" src={mobileCard} width="100%" />
+    <img className="home-mobile" src={mobileCard} width="100%" alt="Immagine rotta" />
         <div className="matteo">
             <h1> PERSONAL TRAINING </h1>
             <h2> FERRARA, EMILIA ROMAGNA </h2>

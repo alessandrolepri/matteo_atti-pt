@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1024px) and (orientation: portrait) {
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
     .map.mapboxgl-map {
         margin: 0!important;
     }
@@ -32,7 +32,8 @@
     }
     div.matteo {
         left: 2%;
-        top: 350px;
+        top: 66px;
+        position: absolute;
         & h2.training {
             font-size: 5.1vh;
         }
@@ -54,14 +55,14 @@
     .matteo h2 {
         display: none
     }
+    .matteo h4 {
+        margin-top: 37.319303338171263vh;
+    }
     h2.training,
     h2.nutrition,
     h2.mindset {
         display: block;
     }
-    // h4 {
-    //     margin-top: 0px;
-    // }
     h4.offerta {
         margin-top: 0;
     }
@@ -78,11 +79,6 @@
     }
     .landing-page {
         height: 80vh;
-    }
-    h2.mindset,
-    h2.nutrition,
-    h2.training {
-        margin-top: -41.187228vh;
     }
 }
 
@@ -177,6 +173,6 @@
         margin: 0 auto;
         padding: 20px;
         text-align: justify;
-        margin-top: -90px;
+        margin-top: 32vh;
     }
 }

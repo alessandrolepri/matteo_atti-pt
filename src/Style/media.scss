@@ -77,7 +77,12 @@
         width: 78.125vw!important;
     }
     .landing-page {
-        padding-bottom: 30vh!important;
+        height: 80vh;
+    }
+    h2.mindset,
+    h2.nutrition,
+    h2.training {
+        margin-top: -41.187228vh;
     }
 }
 
@@ -164,6 +169,14 @@
         width: 90vw;
     }
     .landing-page {
-        padding-bottom: 60vh!important;
+        height: 95vh;
+    }
+    .matteo h4 {
+        max-width: 390px;
+        font-size: 24px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: justify;
+        margin-top: -90px;
     }
 }

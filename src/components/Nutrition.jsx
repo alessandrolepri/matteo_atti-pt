@@ -17,7 +17,7 @@ const Nutrition = () => {
             src={nutrition} 
             width='100%' height='560px' />
             <div className='matteo'>
-                <h2 className='training' style={{maxWidth:'400px'}}> NUTRITION COACHING </h2>
+                <h2 className='training' style={{maxWidth:'235px'}}> NUTRITION COACHING </h2>
             </div>
         </section>
         <NutritionStep />

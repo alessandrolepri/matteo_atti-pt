@@ -25,7 +25,6 @@
     }
     .mindset-info {
         padding: 20px;
-        margin-top: 40px!important;
     }
     section.approach-description>div,
     section.about-mindset {
@@ -33,7 +32,7 @@
     }
     div.matteo {
         left: 2%;
-        top: 85px;
+        top: 350px;
         & h2.training {
             font-size: 5.1vh;
         }
@@ -55,11 +54,16 @@
     .matteo h2 {
         display: none
     }
-    h4 {
-        margin-top: 240px;
+    h2.training,
+    h2.nutrition,
+    h2.mindset {
+        display: block;
     }
-    section.about-mindset {
-        padding-top: 140px;
+    // h4 {
+    //     margin-top: 0px;
+    // }
+    h4.offerta {
+        margin-top: 0;
     }
     .offer {
         padding: 35px;
@@ -68,8 +72,12 @@
         padding: 5px!important;
         width: auto;
     }
-    .info-servizi p {
+    .info-servizi p,
+    .personal-credo p {
         width: 78.125vw!important;
+    }
+    .landing-page {
+        padding-bottom: 30vh!important;
     }
 }
 
@@ -154,5 +162,8 @@
         text-align: justify;
         margin: 0 auto;
         width: 90vw;
+    }
+    .landing-page {
+        padding-bottom: 60vh!important;
     }
 }

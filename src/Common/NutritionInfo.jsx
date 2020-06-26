@@ -12,7 +12,7 @@ const NutritionStep = () => {
         <img className="consult" src={coaching} alt="coaching" />
         <div className="step1">
             <h2>NUTRITION COACHING:</h2>
-            <h4>A PARTIRE DA €35/MESE</h4>
+            <h4 className='offerta'>A PARTIRE DA €35/MESE</h4>
             <p>
             Prima di iniziare il tuo viaggio di fitness prenoteremo una
             consulenza di 60 minuti, al telefono o nel mio studio privato,

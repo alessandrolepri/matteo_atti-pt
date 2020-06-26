@@ -14,7 +14,14 @@ const Training = () => {
     return (
       <div>
         <section className="landing-page1">
-          <img className="training-pic" src={gym} width="100%" height="560px" alt="gym" />
+          <img
+            className="training-pic"
+            src={gym}
+            loading="lazy"
+            width="100%"
+            height="560px"
+            alt="gym"
+          />
           <div className="matteo">
             <h2 className="training"> TRAINING </h2>
           </div>
@@ -44,7 +51,13 @@ const Training = () => {
           </div>
 
           <div className="offers">
-            <img className="on-demand" src={online} width="400px" alt="online" />
+            <img
+              className="on-demand"
+              src={online}
+              width="400px"
+              loading="lazy"
+              alt="online"
+            />
             <div className="offer">
               <h3>ALLENAMENTO ONLINE</h3>
               <price>A PARTIRE DA €60/MESE</price>
@@ -68,7 +81,13 @@ const Training = () => {
           </div>
 
           <div className="offers">
-            <img className="oneToOne" src={online} width="400px" alt="one-to-one lesson" />
+            <img
+              className="oneToOne"
+              src={online}
+              width="400px"
+              loading="lazy"
+              alt="one-to-one lesson"
+            />
             <div className="offer">
               <h3>ONE-TO-ONE</h3>
               <price>A PARTIRE DA €120/MESE</price>
@@ -95,8 +114,8 @@ const Training = () => {
           </div>
         </section>
         <div className="btn-training">
-        <ButtonToContact />
-        <hr></hr>
+          <ButtonToContact />
+          <hr></hr>
         </div>
         <Footer />
       </div>

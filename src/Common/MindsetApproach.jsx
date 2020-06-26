@@ -8,43 +8,42 @@ import weight from "../images/weight.png";
 
 const MindsetApproach = () => {
     return (
-    
-        <section className="approach-description">
+      <section className="approach-description">
         <div className="nutritionig">
-            <img src={apple} alt="apple" />
-            <h3>1. Nutrizione</h3>
-            <p>
+          <img src={apple} alt="apple" loading="lazy" />
+          <h3>1. Nutrizione</h3>
+          <p>
             Scopri e attua strategie nutrizionali che trasformeranno il tuo
             fisico senza sentirti affamato.
-            </p>
+          </p>
         </div>
         <div div className="nutritionig">
-            <img src={weight} alt="weight" />
-            <h3>2. Esercizio</h3>
-            <p>
+          <img src={weight} alt="weight" loading="lazy" />
+          <h3>2. Esercizio</h3>
+          <p>
             Programma di esercizi su misura, strutturato, efficiente in termini
             di tempo e progressivo per soddisfare le vostre esigenze e
             obiettivi.
-            </p>
+          </p>
         </div>
         <div className="nutritionig">
-            <img src={brain} altr="brain" />
-            <h3>3. Mentalità</h3>
-            <p>
+          <img src={brain} altr="brain" loading="lazy" />
+          <h3>3. Mentalità</h3>
+          <p>
             Applicando i principi della mentalità al tuo ardente desiderio di
             raggiungere i tuoi obiettivi, diventerai una versione migliore di
             te.
-            </p>
+          </p>
         </div>
         <div className="nutritionig">
-            <img src={style} alt="style" />
-            <h3>4. Stile di Vita</h3>
-            <p>
+          <img src={style} alt="style" loading="lazy" />
+          <h3>4. Stile di Vita</h3>
+          <p>
             Scopri e attua le abitudini di vita vitali per iniziare a sentirti
             fantastico all&#39;interno e apparire alla grande all&#39;esterno.
-            </p>
+          </p>
         </div>
-        </section>
+      </section>
     );
 }
 

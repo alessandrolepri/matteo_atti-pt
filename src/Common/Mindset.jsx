@@ -12,7 +12,13 @@ const Mindset = () => {
       <>
         <div>
           <section className="landing-page1">
-            <img className="mindset" src={mindset} width="100%" alt="mindset" />
+            <img
+              className="mindset"
+              src={mindset}
+              width="100%"
+              alt="mindset"
+              loading="lazy"
+            />
             <div className="matteo">
               <h2 className="training" style={{ maxWidth: "400px" }}>
                 MINDSET

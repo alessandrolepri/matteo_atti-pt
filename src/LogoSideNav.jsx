@@ -5,8 +5,13 @@ import logo from './images/matteo.jpeg';
 const Logo = () => {
 
     return (
-            <img className="logo-sidenav" alt='Matteo Atti - PT' src={logo} />
-    )
+      <img
+        className="logo-sidenav"
+        alt="Matteo Atti - PT"
+        src={logo}
+        loading="lazy"
+      />
+    );
 }
 
 export default Logo;

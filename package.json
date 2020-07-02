@@ -10,7 +10,7 @@
         "build": "webpack -p",
         "start": "node index.js",
         "awesome": "webpack-dev-server --open --hot --mode development",
-        "nodemon": "nodemon node index.js"
+        "nodemon": "nodemon node --trace-warnings ... index.js"
     },
     "repository": {
         "type": "git",
@@ -47,6 +47,9 @@
         "html-webpack-plugin": "^4.3.0",
         "jade": "^1.11.0",
         "mapbox-gl": "^1.10.1",
+        "mongo": "^0.1.0",
+        "mongodb": "^3.5.9",
+        "mongose": "0.0.2-security",
         "node-sass": "^4.14.1",
         "nodemailer": "^6.4.8",
         "nodemon": "^2.0.4",

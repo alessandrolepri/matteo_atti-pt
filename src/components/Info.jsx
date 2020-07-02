@@ -3,6 +3,8 @@ import React from 'react';
 import Map from '../Common/Map';
 import ContactForm from '../Common/ContactForm';
 import Footer from './Footer';
+import Intro from '../Common/Intro'
+import InfoUtili from '../Common/InfoUtili'
 
 class Info extends React.Component {
     constructor() {
@@ -11,31 +13,23 @@ class Info extends React.Component {
 
     render() {
         return (
-            <>
-                <Map />
-                <h2 className='contattami'> Contattami </h2>
-                <div className='info'>
-                    <div className='indirizzo'>
-                        <h3>Indirizzo</h3>
-                        <p>Via Manin, 15</p>
-                        <p>44042, Cento</p>
-                        <p>Ferrara, FE</p>
-                    </div>
-                    <div className='orari'>
-                        <h3>Orari</h3>
-                        <p>Lun 08-23</p>
-                        <p>Mar 08-23 </p>
-                        <p>Mer 08-23</p>
-                        <p>Gio 08-23</p>
-                        <p>Ven 08-23</p>
-                        <p>Sab 08-19</p>
-                        <p>Dom CHIUSO</p>
-                    </div>
-                    <ContactForm />
-                </div>
-                <Footer />
-            </>
-        )
+          <>
+            <Intro />
+            <Map />
+            <InfoUtili />
+            <section className="email-me">
+              <div classNAme="dm">
+                <h3>Contatto diretto</h3>
+              </div>
+              <div className="appuntamento">
+                <p>Contattami per una consulenza o per fissare un incontro!</p>
+              </div>
+              <hr></hr>
+            </section>
+            <ContactForm />
+            <Footer />
+          </>
+        );
     }
 }
 

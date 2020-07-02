@@ -1,116 +1,129 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
-
+import { Form, Button } from "react-bootstrap";
 
 import { Icon } from "semantic-ui-react";
 
-class ContactForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "",
-      email: "",
-      mobile: "",
-      message: "",
-    };
-  }
+const ContactForm = () => {
+  const [state, setState] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    message: "",
+  });
 
-  handleSubmit(e) {
-    e.preventDefault();
-    axios({
-      method: "POST",
-      url: "/contact",
-      data: this.state,
-    })
-      .then(() => console.log("Email sent"))
-      .catch((err) => console.log(err, "ERROR OCCUR"));
-  }
+  const [result, setResult] = useState(null);
 
-  handleResetForm = () => {
-    setTimeout(() => {
-      this.setState({ name: "", email: "", mobile: "", message: "" });
-    }, 1000);
+  const sendEmail = (event) => {
+    event.preventDefault();
+    axios
+      .post("/contact", { ...state })
+      .then((response) => {
+        setResult(response.data);
+        setState({
+          name: "",
+          email: "",
+          mobile: "",
+          message: "",
+        });
+      })
+      .catch(() => {
+        setResult({
+          success: false,
+          message: "Errore interno. Riprova più tardi oppure contattami telefonicamente",
+        });
+      });
   };
 
-  render() {
-    return (
-      <div className="Contact-form">
-        <form
-          id="contact-form"
-          method="POST"
-          onSubmit={this.handleSubmit.bind(this)}
-        >
-          <div className="form-group">
-            <label htmlFor="name">Nome e Cognome</label>
-            <input
-              type="text"
-              className="form-control"
-              id="name"
-              value={this.state.name}
-              onChange={this.onNameChange.bind(this)}
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="exampleInputEmail1">Indirizzo Email</label>
-            <input
-              type="email"
-              className="form-control"
-              id="email"
-              aria-describedby="emailHelp"
-              value={this.state.email}
-              onChange={this.onEmailChange.bind(this)}
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="mobile">Telefono</label>
-            <input
-              type="text"
-              className="form-control"
-              id="mobile"
-              value={this.state.mobile}
-              onChange={this.onMobileChange.bind(this)}
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Messaggio</label>
-            <textarea
-              className="form-control"
-              rows="5"
-              placeholder="Lasciami un breve messaggio con le tue domande ed i tuoi obiettivi e ti risponderò al più presto"
-              id="message"
-              value={this.state.message}
-              onChange={this.onMessageChange.bind(this)}
-            />
-          </div>
-          <button
+  const onInputChange = (event) => {
+    const { name, value } = event.target;
+
+    setState({
+      ...state,
+      [name]: value,
+    });
+  };
+
+  return (
+    <div>
+      {result && (
+        <p className={`${result.success ? "success" : "error"}`}>
+          {result.message}
+        </p>
+      )}
+      <form onSubmit={sendEmail}>
+        <Form.Group controlId="name">
+          <Form.Label>Nome & Cognome</Form.Label>
+          <Form.Control
+            type="text"
+            name="name"
+            value={state.name}
+            placeholder="Inserisci il tuo nome"
+            onChange={onInputChange}
+          />
+        </Form.Group>
+        <Form.Group controlId="email">
+          <Form.Label>Email</Form.Label>
+          <Form.Control
+            type="text"
+            name="email"
+            value={state.email}
+            placeholder="Inserisci la tua email"
+            onChange={onInputChange}
+          />
+        </Form.Group>
+        <Form.Group controlId="mobile">
+          <Form.Label>Cellulare</Form.Label>
+          <Form.Control
+            type="text"
+            pattern="[0-9]*"
+            name="mobile"
+            value={state.mobile}
+            placeholder="Cellulare"
+            onChange={onInputChange}
+          />
+        </Form.Group>
+        <Form.Group controlId="message">
+          <Form.Label>Messaggio</Form.Label>
+          <Form.Control
+            as="textarea"
+            name="message"
+            value={state.message}
+            rows="3"
+            placeholder="Scrivi il tuo messaggio **"
+            onChange={onInputChange}
+          />
+        </Form.Group>
+        <Form.Group className="privacy">
+          <info>
+            <p className="campi-obbligatori">Tutti i campi solo obbligatori</p>
+          </info>
+          <info>
+            ** Inviando questo messaggio dichiaro di aver preso visione
+            dell&#39;informativa sulla privacy resa ai sensi dell&#39;art. 13
+            del Regolamento UE 2016/679 e presto il consenso al trattamento dei
+            miei dati personali.
+          </info>
+        </Form.Group>
+
+        <Form.Group>
+          <Button
+            variant="primary"
             type="submit"
-            className="btn btn-primary"
-            onSubmit={this.handleSubmit.bind(this)}
-            onClick={this.handleResetForm}
+            disabled={
+              state.name.length < 1 ||
+              state.message.length < 1 ||
+              state.email.length < 1 ||
+              state.mobile.length < 1
+            }
           >
             <Icon name="paper plane" />
-            Invia
-          </button>
-        </form>
-      </div>
-    );
-  }
-
-  onNameChange(event) {
-    this.setState({ name: event.target.value });
-  }
-
-  onEmailChange(event) {
-    this.setState({ email: event.target.value });
-  }
-
-  onMobileChange(event) {
-    this.setState({ mobile: event.target.value });
-  }
-
-  onMessageChange(event) {
-    this.setState({ message: event.target.value });
-  }
-}
+            INVIA
+          </Button>
+        </Form.Group>
+      </form>
+    </div>
+  );
+};
 
 export default ContactForm;

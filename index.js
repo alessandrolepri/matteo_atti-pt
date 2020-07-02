@@ -2,11 +2,11 @@ require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
-const nodemailer = require("nodemailer")
 const cors = require("cors");
-
+const transporter = require('./config/config')
 
 const app = express()
+app.use(express.static(`${__dirname}/dist`));
 
 app.use(express.json());
 app.use(bodyParser.json());
@@ -23,29 +23,13 @@ app.use(function(req, res, next) {
     next();
 });
 
-app.use(express.static(`${__dirname}/dist`));
-
 app.get("/*", (req, res) => res.sendFile(`${__dirname}/dist/index.html`));
 
 app.post("/contact", (req, res) => {
-    // console.log(req.body)
-    res.set('Content-Type', 'application/json')
-    const jsonData = JSON.stringify(req.body)
-    res.status(201)
-    res.json()
-    const email = process.env.EMAIL_USER
-    const pass = process.env.EMAIL_PASS
-    const service = process.env.SERVICE
-    const emailTo = process.env.EMAIL_TO
 
-    const transporter = nodemailer.createTransport({
-    service: service,
-    secure: true,
-    auth: {
-        user: email,
-        pass: pass,
-    },
-});
+    res.set('Content-Type', 'application/json')
+
+    const emailTo = process.env.EMAIL_TO
 
 const output = `
     <h3>Hai un nuovo messaggio da ${req.body.name}</h3>
@@ -66,11 +50,17 @@ const mailOptions = {
 }
 transporter.sendMail(mailOptions, function(error, info) {
     if (error) {
-        console.log(error);
+        res.status(500).send({
+          success: false,
+          message: "Errorre interno di server"
+        });
     } else {
-        console.log("Email sent: " + info.response);
-    }
-});
+        res.send({
+          success: true,
+          message: "Messaggio inviato con successo"
+        });
+      }
+  });
 });
 
 app.listen(process.env.PORT || 4000, () =>

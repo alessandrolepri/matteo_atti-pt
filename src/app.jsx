@@ -39,6 +39,7 @@ import DropdownService from './Common/Servizi';
 import Nutrition from './components/Nutrition';
 import Mindset from './Common/Mindset';
 import Privacy from './Privacy';
+import Cookie from './cookie'
 
 
 class App extends React.Component {
@@ -68,34 +69,37 @@ class App extends React.Component {
 
     render() {
         return (
-            <React.Fragment>
-        <BrowserRouter>
-        <main>
-            <Sidebar.Pushable as={Segment}>
-              <SideNav
-                handleSidebarHide={this.handleSidebarHide}
-                visible={this.state.sidebarVisible}
-              />
-              <Sidebar.Pusher>
-                <NavBar hideSidebar={this.handleSidebarHide} handleShowClick={this.handleShowClick} />
+          <React.Fragment>
+            <BrowserRouter>
+              <main>
+                <Sidebar.Pushable as={Segment}>
+                  <SideNav
+                    handleSidebarHide={this.handleSidebarHide}
+                    visible={this.state.sidebarVisible}
+                  />
+                  <Sidebar.Pusher>
+                    <NavBar
+                      hideSidebar={this.handleSidebarHide}
+                      handleShowClick={this.handleShowClick}
+                    />
 
-
-            <Switch>
-            <Route path='/privacy' component={Privacy} />
-            <Route path="/aboutme" component={AboutMe} />
-            <Route path="/contact" component={Info} />
-            <Route path="/training" component={Training} />
-            <Route path='/nutrition' component={Nutrition} />
-            <Route path='/mindset' component={Mindset} />
-            <Route path = "/servizi" component={DropdownService} />
-            <Route path="/" component={HomePage} />
-            </Switch>
-            </Sidebar.Pusher>
-            </Sidebar.Pushable>
-            </main>
-        </BrowserRouter>
-    </React.Fragment>
-        )
+                    <Switch>
+                      <Route path="/privacy" component={Privacy} />
+                      <Route path="/aboutme" component={AboutMe} />
+                      <Route path="/contact" component={Info} />
+                      <Route path="/training" component={Training} />
+                      <Route path="/nutrition" component={Nutrition} />
+                      <Route path="/mindset" component={Mindset} />
+                      <Route path="/servizi" component={DropdownService} />
+                      <Route path="/" component={HomePage} />
+                    </Switch>
+                  </Sidebar.Pusher>
+                </Sidebar.Pushable>
+              </main>
+            </BrowserRouter>
+            <Cookie />
+          </React.Fragment>
+        );
     };
 }
 

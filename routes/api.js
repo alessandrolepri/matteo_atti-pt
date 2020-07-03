@@ -38,7 +38,12 @@ router.post("/contact", (req, res) => {
   transporter.sendMail(mailOptions, function(error, info) {
     if (error) {
       console.log(error);
-      res.status(500).json({ msg: "Errore interno di server!!!" })
+      res
+        .status(500)
+        .json({
+          msg:
+            "Errore interno. Riprova più tardi oppure contattami telefonicamente.",
+        });
     }
 
     return res.json({

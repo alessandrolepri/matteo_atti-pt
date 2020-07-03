@@ -33,7 +33,7 @@ const Footer = () => {
                 <List link inverted>
                     <List.Item as='a' href='/aboutme'>Chi sono</List.Item>
                     <List.Item as='a' href='#'>Term & Conditions</List.Item>
-                    <List.Item as='a' href='#'>Privacy</List.Item>
+                    <List.Item as='a' href='/privacy'>Privacy</List.Item>
                 </List>
                 </Grid.Column>
                 <Grid.Column width={3}>
@@ -49,7 +49,7 @@ const Footer = () => {
             </Grid>
             <div class="ui divider"></div>
             <p className = "text-center">
-            &copy; Copyright 2020 - Matteo Atti, Personal Trainer and Consultant. All rights reserved. </p>
+            &copy; Copyright 2020 - Matteo Atti, Personal Trainer and Consultant. Tutti i diritti riservati. </p>
             </Container>
     </Segment>
     )

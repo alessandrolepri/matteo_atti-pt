@@ -30,7 +30,7 @@ const ContactForm = () => {
       .catch(() => {
         setResult({
           success: false,
-          message: "Errore interno. Riprova più tardi oppure contattami telefonicamente",
+          message: "Errore interno. Riprova più tardi oppure contattami telefonicamente.",
         });
       });
   };
@@ -43,6 +43,7 @@ const ContactForm = () => {
       [name]: value,
     });
   };
+  
 
   return (
     <div>
@@ -100,9 +101,10 @@ const ContactForm = () => {
           </info>
           <info>
             ** Inviando questo messaggio dichiaro di aver preso visione
-            dell&#39;informativa sulla privacy resa ai sensi dell&#39;art. 13
-            del Regolamento UE 2016/679 e presto il consenso al trattamento dei
-            miei dati personali.
+            dell&#39;informativa sulla privacy resa ai sensi dell&#39;
+            <a href="https://www.lavoro.gov.it/Documents/informativa_GDPR.pdf">
+            art.13 del Regolamento UE 2016/679
+            </a> e presto il consenso al trattamento dei miei dati personali.
           </info>
         </Form.Group>
 

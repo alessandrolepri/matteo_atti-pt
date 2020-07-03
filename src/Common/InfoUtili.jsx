@@ -10,7 +10,9 @@ const InfoUtili = () => (
       </div>
       <div className="email">
         <Icon name="mail" />
+        <a href="mailto:test@test.com">
         <Header as="h2" content="test@test.com" />
+        </a>
       </div>
     </section>
     <section className="mi-trovi-qui">

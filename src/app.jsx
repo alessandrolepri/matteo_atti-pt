@@ -26,6 +26,7 @@ import '../src/Style/aboutme.scss'
 import '../src/Style/nutrition.scss'
 import '../src/Style/PersonalCredo.scss'
 import '../src/Style/specialOffer.scss'
+import '../src/Style/privacy.scss'
 
 
 import NavBar from './components/NavBar';
@@ -37,6 +38,7 @@ import Training from './components/Training';
 import DropdownService from './Common/Servizi';
 import Nutrition from './components/Nutrition';
 import Mindset from './Common/Mindset';
+import Privacy from './Privacy';
 
 
 class App extends React.Component {
@@ -79,6 +81,7 @@ class App extends React.Component {
 
 
             <Switch>
+            <Route path='/privacy' component={Privacy} />
             <Route path="/aboutme" component={AboutMe} />
             <Route path="/contact" component={Info} />
             <Route path="/training" component={Training} />

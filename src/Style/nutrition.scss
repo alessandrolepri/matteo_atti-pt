@@ -29,3 +29,11 @@ section.approach-description>div {
         padding-bottom: 30px;
     }
 }
+
+.ui.segment {
+    padding: 20px;
+    &p {
+      text-align: justify;
+      font-size: 18px;
+    }
+}

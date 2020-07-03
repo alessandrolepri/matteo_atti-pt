@@ -5,6 +5,8 @@ import semi_private from '../images/semi-private.jpeg';
 import one_to_one from '../images/one-to-one.jpeg';
 import online from '../images/On-Demand-Training.jpg';
 
+
+import TrainingApproach from './TrainingApproach'
 import Footer from './Footer';
 import ButtonToContact from '../Common/ButtonToContact';
 
@@ -26,9 +28,15 @@ const Training = () => {
             <h2 className="training"> TRAINING </h2>
           </div>
         </section>
+        <TrainingApproach />
         <section className="training-offer">
           <div className="offers">
-            <img className="private" src={online} width="400px" alt="online" />
+            <img
+              className="private"
+              src={semi_private}
+              width="400px"
+              alt="online"
+            />
             <div className="offer">
               <h3>SEMI-PRIVATE</h3>
               <price>A PARTIRE DA €65/MESE</price>
@@ -83,7 +91,7 @@ const Training = () => {
           <div className="offers">
             <img
               className="oneToOne"
-              src={online}
+              src={one_to_one}
               width="400px"
               loading="lazy"
               alt="one-to-one lesson"

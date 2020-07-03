@@ -5,6 +5,7 @@ import nutrition from '../images/nutrition.jpg';
 
 import Footer from './Footer';
 import NutritionStep from '../Common/NutritionInfo';
+import NutritionTips from '../components/NutritionTips'
 
 
 
@@ -23,12 +24,12 @@ const Nutrition = () => {
             />
             <div className="matteo">
               <h2 className="training" style={{ maxWidth: "235px" }}>
-                {" "}
-                NUTRITION COACHING{" "}
+                NUTRITION COACHING
               </h2>
             </div>
           </section>
           <NutritionStep />
+          <NutritionTips />
         </div>
         <Footer />
       </>

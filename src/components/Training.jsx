@@ -29,6 +29,7 @@ const Training = () => {
           </div>
         </section>
         <TrainingApproach />
+
         <section className="training-offer">
           <div className="offers">
             <img
@@ -36,6 +37,7 @@ const Training = () => {
               src={semi_private}
               width="400px"
               alt="online"
+              loading="lazy"
             />
             <div className="offer">
               <h3>SEMI-PRIVATE</h3>
@@ -65,6 +67,7 @@ const Training = () => {
               width="400px"
               loading="lazy"
               alt="online"
+              loading="lazy"
             />
             <div className="offer">
               <h3>ALLENAMENTO ONLINE</h3>
@@ -95,6 +98,7 @@ const Training = () => {
               width="400px"
               loading="lazy"
               alt="one-to-one lesson"
+              loading="lazy"
             />
             <div className="offer">
               <h3>ONE-TO-ONE</h3>

@@ -6,27 +6,38 @@ h2.training {
 
 section.training-offer {
     margin-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 
 section.training-offer>div {
     text-align: justify;
+    padding-bottom: 100px;
 }
 
 .offers {
     padding: 20px;
-    width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.offers>.offer {
+    width: 600px;
 }
 
 .btn-training {
     text-align: center;
+    padding-top: 100px;
+}
+
+.btn-training .btn-hp {
+    margin: 0 auto;
 }
 
 .training-approach {
     text-align: justify;
     font-size: 18px;
     line-break: auto;
+    padding-top: 80px;
 }

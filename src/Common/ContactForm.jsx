@@ -114,9 +114,9 @@ const ContactForm = () => {
             type="submit"
             disabled={
               state.name.length < 1 ||
-              state.message.length < 1 ||
-              state.email.length < 1 ||
-              state.mobile.length < 1
+              state.message.length < 100 ||
+              state.email.length < 11 ||
+              state.mobile.length < 9
             }
           >
             <Icon name="paper plane" />

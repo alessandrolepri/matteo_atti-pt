@@ -31,7 +31,7 @@
         "@babel/preset-react": "^7.10.1",
         "@webpack-cli/serve": "^0.2.0",
         "EventEmitter": "^1.0.0",
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "babel-loader": "^8.1.0",
         "bcrypt": "^5.0.0",
         "body-parser": "^1.19.0",
